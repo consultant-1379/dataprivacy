@@ -1,0 +1,25 @@
+INFO:  2021-09-21 11:49:25,192 - sparkmonitorkernel - 31429 - MainProcess -         140209718699840 - MainThread
+ Starting Kernel Extension 
+
+INFO:  2021-09-21 11:49:25,192 - sparkmonitorkernel - 31429 - MainProcess -         140209718699840 - MainThread
+ Socket Listening on port 38894 
+
+INFO:  2021-09-21 11:49:25,193 - sparkmonitorkernel - 31429 - MainProcess -         140206237538048 - Thread-4
+ Starting socket thread, going to accept 
+
+INFO:  2021-09-21 11:49:25,193 - sparkmonitorkernel - 31429 - MainProcess -         140209718699840 - MainThread
+ 38894 
+
+INFO:  2021-09-21 11:49:25,194 - sparkmonitorkernel - 31429 - MainProcess -         140209718699840 - MainThread
+ Adding jar from /opt/conda/lib/python3.7/site-packages/sparkmonitor/listener.jar  
+
+INFO:  2021-09-21 11:49:25,526 - sparkmonitorkernel - 31429 - MainProcess -         140209718699840 - MainThread
+ COMM OPENED MESSAGE: 
+ {'header': {'msg_id': 'd8a1cff540534a0da7b97b7f012e5bf2', 'username': 'username', 'session': '533a20ac1cab4ce78d48e6154ec3d27e', 'msg_type': 'comm_open', 'version': '5.2', 'date': datetime.datetime(2021, 9, 21, 11, 49, 25, 525129, tzinfo=datetime.timezone.utc)}, 'msg_id': 'd8a1cff540534a0da7b97b7f012e5bf2', 'msg_type': 'comm_open', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': 'de136868d3e440df8e8ebe8e95126a84', 'target_name': 'SparkMonitor', 'data': {'msgtype': 'openfromfrontend'}}, 'buffers': []} 
+ 
+
+INFO:  2021-09-21 11:49:25,529 - sparkmonitorkernel - 31429 - MainProcess -         140209718699840 - MainThread
+ COMM OPENED MESSAGE: 
+ {'header': {'msg_id': 'c7aef7c154c44e3c81f13cc482346498', 'username': 'username', 'session': '533a20ac1cab4ce78d48e6154ec3d27e', 'msg_type': 'comm_open', 'version': '5.2', 'date': datetime.datetime(2021, 9, 21, 11, 49, 25, 528543, tzinfo=datetime.timezone.utc)}, 'msg_id': 'c7aef7c154c44e3c81f13cc482346498', 'msg_type': 'comm_open', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '03a55afa5d2b47bb9d72322217de2498', 'target_name': 'SparkMonitor', 'data': {'msgtype': 'openfromfrontend'}}, 'buffers': []} 
+ 
+

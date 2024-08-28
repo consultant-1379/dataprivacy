@@ -1,0 +1,18 @@
+queries:
+    # Which column to query
+  - column: c1
+    # Query type can be: mean|sum|variance|histogram
+    type: mean
+    # Privacy budget
+    epsilon: 9.1
+  - column: c3
+    type: sum
+    epsilon: 99.1
+  - column: c1
+    type: variance
+    epsilon: 99.1
+  - column: c1
+    type: histogram
+    epsilon: 2.9
+    # Bin edges fot the histogram
+    edges: [1.,4.,11.]

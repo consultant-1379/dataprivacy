@@ -1,0 +1,29 @@
+# Anonymizer config name to run by default
+# Can be overridden with the --run command line option
+run: config1
+
+# Anonymizer configurations
+# Contains selected algorithm name and related parameters
+# Algorithm names can be: ldiverstiy_columnwise|ldiverstiy_ordered|ksphere|hierarchical
+anonymizers:
+  config1:
+    algorithm: ldiverstiy_columnwise
+    cluster_size: 5
+    epsilon: 4
+
+  config2:
+    algorithm: ldiverstiy_ordered
+    cluster_size: 4
+    epsilon: 1
+
+  config3:
+    algorithm: ksphere
+    k: 5
+    epsilon: 5
+    lof: false
+
+  config4:
+    algorithm: hierarchical
+    k: 3
+    epsilon: 1
+    lof: false

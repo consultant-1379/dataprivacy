@@ -1,0 +1,18 @@
+queries:
+    # Which column to query
+  - column: HH_L1_magnitude
+    # Query type can be: mean|sum|variance|histogram
+    type: mean
+    # Privacy budget
+    epsilon: 1
+  - column: HH_jit_L3_weight
+    type: sum
+    epsilon: 9
+  - column: HpHp_L5_mean
+    type: variance
+    epsilon: 5
+  - column: HH_L1_magnitude
+    type: histogram
+    epsilon: 99.9
+    # Bin edges fot the histogram
+    edges: [100.,400.,900.]

@@ -1,0 +1,50 @@
+type: csv
+separator: ','
+header: True
+dateformat: '%m/%d/%Y'
+
+# Default settings for all columns
+# Values set for a specific column (under "columns" ) will override these values
+columns_default:
+  # data type: integer|float|date|categorical|string
+  type: float
+  # imputation for missing values: none|zero|mean|value
+  impute: none
+
+  # impute this specific value
+  # only used when "impute: value" is set
+  # impute_value: 99
+
+  # lower bound (required for DP queries only)
+  lower: 0
+
+  # upper bound (required for DP queries only)
+  upper: 20
+
+  # Restore all cells with missing data in the specified column after anonymization as missing values (even if there were imputed before the anonymization)
+  # WARNING: setting this to True for any column may reduce the level of privacy provided!
+  keep_null: False
+
+# Unique settings for individual columns
+columns:
+  c1:
+    type: float
+    impute: zero
+    lower: 0.0
+    # upper: 20.0
+  c2:
+    type: integer
+  c3:
+    type: float
+    upper: 100
+    keep_null: True
+  c4:
+    type: float
+  c5:
+    type: categorical
+
+  c6:
+    type: date
+    impute: value
+    impute_value: 1/1/2048
+    keep_null: True
